@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="org.netention.curiosume"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.netention.curiosume"
     android:versionCode="1"
-    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="7"
         android:targetSdkVersion="7" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -28,6 +31,10 @@
         <activity
             android:name="org.netention.curiosume.InventoryActivity"
             android:label="@string/title_activity_inventory" >
+        </activity>
+        <activity
+            android:name="org.netention.curiosume.ClassifyTagActivity"
+            android:label="@string/title_activity_classify_tag" >
         </activity>
     </application>
 
